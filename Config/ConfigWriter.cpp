@@ -118,7 +118,7 @@ namespace QuickConfiguration
 		else {
 			/* Warning */
 			#ifdef _DEBUG
-				Except("数据类型有误!");
+				Except("鏁版嵁绫诲瀷鏈夎!");
 			#endif
 		}
 		/* Bug */
@@ -224,7 +224,7 @@ namespace QuickConfiguration
 	void Write(const std::list<ConfigList>& alist, FILE* fp)
 	{
 		rewind(fp);
-		//去除Const
+		//鍘婚櫎Const
 		std::list<ConfigList>* plist = const_cast<std::list<ConfigList>*>(&alist);
 
 		std::list<ConfigList>::iterator p_list_tor = plist->begin();
